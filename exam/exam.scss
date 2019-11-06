@@ -1,0 +1,646 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,700&display=swap');
+
+@mixin container(){
+    max-width: 51.1520737vw;
+    margin-right: auto;
+    margin-left: auto;
+    @media screen and(max-width: 1200px){
+     width:80%;   
+    }
+}
+
+$white: #ffffff;
+$lightwhite: #e8e8e8;
+$fontJosefin: 'Josefin Sans', sans-serif;
+$fontAleo: 'Josefin Sans', sans-serif;
+$font3px: 0.1382vw;
+$font5px:0.230414vw;
+$font12px:0.55299539vw;
+$font14px:0.64516129vw;
+$font15px:0.69124424vw;
+$font16px:0.7373vw;
+$font20px:0.92165vw;
+$font24px: 1.10599078vw;
+$font26px:0.834615vw;
+$font28px:1.29vw;
+$font30px:1.3824vw;
+$font36px: 1.7vw;
+$blue:#5374FE;
+
+body{
+    margin:0px;
+}
+
+.button{
+    width: 10.23vw;
+    height: 1.9354838vw;
+    color: $white;
+    background-color: $blue;
+    text-align: center;
+    padding-top: 20px;
+    @media screen and(max-width: 1200px){
+        width:40%;   
+        height:7%;
+        padding-top:0px;
+        margin-right: auto;
+        margin-left: auto;
+        font-size: $font12px;
+       }
+
+}
+
+
+.search{
+    width: 100%;
+    height:34.10138vw;
+    background-image: url("bg1.png");
+    overflow: hidden;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-color: #04132F;
+
+    
+    &__container{
+        @include container();
+        height:100%;
+        padding-top:12.7649vw;
+        padding-left: $font15px;
+        text-align: center;
+        position: relative;
+       
+
+    }
+    &__title{
+        font-family: $fontJosefin;
+        font-size: 2.2vw;
+        letter-spacing: $font5px;
+        line-height: $font26px;
+        color: $white;
+        margin-bottom: $font24px;
+        @media screen and(max-width: 1200px){
+            margin-left: 15%;
+            font-size: $font24px;
+            text-align: center;}
+        }
+    &__description{
+        font-size: 1.01vw;
+        letter-spacing: $font5px;
+        line-height: $font26px;
+        color: $white;
+        font-family: $fontJosefin;
+        margin-bottom: 2.4vw;
+        @media screen and(max-width: 1200px){
+            margin-left: 15%;
+            font-size: $font15px;
+            text-align: center;}
+    }
+    &__email{
+        width:23vw;
+        height: 54px;
+        margin-left:20%;
+        float: left;
+        letter-spacing: 1.5px;
+        line-height: $font26px;
+        color: #999999;
+        font-family: $fontJosefin;
+        text-align: center;
+        font-size: $font15px;
+        @media screen and(max-width: 1200px){
+            width: 20vw;
+            margin-left: 30%;
+            font-size: $font12px;
+        }
+  
+        
+    }
+    &__search-button{
+        float: left;
+        width:6.64vw;
+        height: 55px;
+        border: 2px solid $white;
+        background-color: $blue;
+        font-size: $font15px;
+        letter-spacing: 1px;
+        line-height: $font26px;
+        color: $white;
+        font-family:$fontAleo;
+        font-weight: 400;
+        text-align: center;
+        @media screen and(max-width: 1200px){
+            width: 5vw;
+            font-size: $font12px;
+        }
+
+    }
+    &__scroll{
+        position: absolute;
+        top: 56%;
+        color: $white;
+        left: 46.3%;
+        font-family:$fontAleo;
+        @media screen and(max-width: 1200px){
+            width: 5vw;
+            font-size: 10px;
+            position: unset;
+            margin-top: 20%;
+            margin-left: 50%;
+        }
+    }
+    &__scroll-down{
+        fill: $white;
+    }
+   
+        
+    
+}
+
+.description{
+    width: 100%;
+    background-color:$blue;
+    height: 3.6vw;
+    @media screen and(max-width: 1200px){
+        height: 10vw;
+    }
+
+    &__container{
+        @include container();
+        height: 100%;
+        padding-top:1.2%;
+        color: $white;
+        @media screen and(max-width: 1200px){
+            height: 5vw;
+        
+        }
+       
+        
+    }
+    &__title{
+        float:left;
+        width:7.9vw;
+        font-size: 1.244vw;;
+        letter-spacing: 2px;
+        line-height: $font26px;
+        font-family:$fontJosefin;
+        font-weight: 700;
+        margin-left:-10px;
+        margin-right: 19.7vw;
+        font-weight: normal;
+        padding-top: 0.5%;
+        @media screen and(max-width: 1200px){
+            width: 15vw;
+            font-size: $font14px;
+            margin-left: 50%;
+        }
+
+            }
+    &__menu{
+        float:left;
+        display: flex;
+        flex-direction: row;
+       justify-content: space-between;
+        width:23.04vw;
+        @media screen and(max-width: 1200px){
+            width: 23vw;
+            margin-left: 35%;
+        }
+    }
+    &__menuitem{
+
+        font-size: $font14px;
+        line-height: $font28px;
+        font-family: $fontAleo;
+        font-weight: 400;
+        text-align: center;
+        @media screen and(max-width: 1200px){
+            font-size: $font12px;
+            text-align: center;
+            margin-right: 2vw;
+
+        }
+    }
+
+}
+
+.choose-why{
+    width:100%;
+    background-image: url("bg2.png");
+    height:31.8vw;
+    overflow: hidden;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-color: #3B3838;
+    &__container{
+        @include container();
+        height:100%;
+        position: relative;
+        color: $white;
+        padding-top: 8.45vw;
+        @media screen and(max-width: 1200px){
+            padding-top: 0px;
+            height:32vw;
+        }
+    }
+    &__reason{
+        float:left;
+        width:29.4930vw;
+        height: 19.815vw;
+        padding-top: 1.2vw;
+        @media screen and(max-width: 1200px){
+           width:60%;
+           height:100%;
+        }
+        
+    }
+    &__title{
+        font-size: $font36px;
+        line-height: $font28px;
+        font-family: $fontAleo;
+        font-weight: 400;
+        margin-bottom: 9.3%;
+        @media screen and(max-width: 1200px){
+            margin-bottom:5%;
+            font-size: $font20px;
+         }
+        
+    }
+    &__text{
+        font-size: $font16px;
+        letter-spacing: 0.5px;
+        line-height: $font28px;
+        color: $lightwhite;
+        font-family: $fontJosefin;
+        margin-bottom: 8.1%;
+        @media screen and(max-width: 1200px){
+            margin-bottom:5%;
+            font-size: $font12px;
+            line-height: $font20px;
+         }
+        
+                
+    }
+    &__pictures{
+        float:right;
+        width:20.73vw;
+        height: 20.73vh;
+        margin-top:-3vw;
+        @media screen and(max-width: 1200px){
+           width: 20vw;
+           height:50vh;
+         }
+        
+        
+    }
+    &__house-img{
+        margin-left: -0.94vw;
+        @media screen and(max-width: 1200px){
+            width:100%;
+          height: 50%;
+          margin-right: auto;
+        margin-left: auto;
+         }
+        
+
+        
+    }
+    
+    &__mountain-img{
+       margin-left:5vw;
+       @media screen and(max-width: 1200px){
+        width:100%;
+        height: 50%;
+        margin-right: auto;
+        margin-left: auto;
+       }
+      
+        
+    }
+  
+    
+}
+.process{
+    width:100%;
+    background-image: url("bg3.png");
+    height:15.4838vw; 
+     overflow: hidden;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-color: #333333;
+    @media screen and(max-width: 1200px){
+        height: 80%;
+        margin-right: auto;
+        margin-left: auto;
+        background-color: #323334;
+        background-image: none;
+       }
+    
+    &__container{
+        @include container();
+        padding-top:3.5%;
+        height:100%; 
+        position: relative;
+        color: $white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-right:2vw;
+    }
+
+    &__menu-item{
+    text-align: center;
+        
+    }
+    &__sign{
+  margin-bottom:0.3vw;
+  @media screen and(max-width: 1200px){
+    margin-bottom: 0px;
+   }
+    }
+
+    &__sign--search{
+        white-space:pre;
+        fill: $blue;
+        background-color:#323334;
+        margin-right:20%;
+       
+        
+        
+
+    }
+    &__sign--accept{
+        white-space:pre;
+        fill: #ff6363;
+        background-color:#323334;
+        margin-right:10%;
+
+        
+    }
+    &__sign--like{
+        white-space:pre;
+        fill: #00a2ff;
+        background-color:#323334;
+
+        
+    }
+    &__title{
+        font-size: $font36px;
+        color: $lightwhite;
+        font-family: $fontAleo;
+        font-weight: 400;
+        text-align: center;
+      
+            
+            @media screen and(max-width: 1200px){
+                font-size: 15px;
+               }
+            }
+}
+.destination-description1{
+    width:100%;
+    background-image: url("bg4.png");
+    height:32.258vw;  
+    overflow: hidden;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-color: #736892;
+    @media screen and(max-width: 1200px){
+        height:42.258vw;
+        background-size: 100%;
+       }
+    &__container{
+        @include container();
+        height:100%; 
+    }
+    &__passage{
+        background-color: black;
+        opacity: 60%;
+        width:23.25vw;
+        height:15vw;
+        margin-top:20.5%;
+        padding-left:2.5%;
+        padding-top:4.4%;
+        font-family: $fontJosefin;
+        @media screen and(max-width: 1200px){
+            height:80%;
+            margin-top: 0px;
+            width:23.25vw;
+            margin-right:auto;
+            margin-left:auto;
+           }
+        
+    }
+    &__title{
+        font-size: $font20px;
+        letter-spacing: 2px;
+        line-height: $font28px;
+        color: $lightwhite;
+        margin-bottom: 4.5%;
+    }
+    &__name{
+        font-size: $font20px;
+        line-height: $font28px;
+        color:$white;
+        margin-bottom: 4%;
+                
+    }
+    &__text{
+        font-size: $font14px;
+        line-height: $font28px;
+        color: $lightwhite;
+        margin-bottom: 8%;
+    }
+}
+    
+    .destination-description2{
+        width:100%;
+        background-image: url("bg4.png");
+        height:32.258vw;  
+        overflow: hidden;
+        background-position-x: center;
+        background-repeat: no-repeat;
+        background-color: #736892;
+        @media screen and(max-width: 1200px){
+            height:42.258vw;
+            background-size: 100%;
+           }
+        &__container{
+            @include container();
+            height:100%; 
+        }
+        &__passage{
+            background-color: black;
+            opacity: 60%;
+            width:23vw;
+            height:15vw;
+            margin-top:21%;
+            padding-left:2.5%;
+            padding-top:4.4%;
+            font-family: $fontJosefin;
+            margin-left:51.5%;
+            @media screen and(max-width: 1200px){
+                height:80%;
+                margin-top: 0px;
+                width:23.25vw;
+                margin-right:auto;
+                margin-left:auto;
+               }
+            
+        }
+        &__title{
+            font-size: $font20px;
+            letter-spacing: 2px;
+            line-height: $font28px;
+            color: $lightwhite;
+            margin-bottom: 4.5%;
+        }
+        &__name{
+            font-size: $font20px;
+            line-height: $font28px;
+            color:$white;
+            margin-bottom: 4%;
+                    
+        }
+        &__text{
+            font-size: $font14px;
+            line-height: $font28px;
+            color: $lightwhite;
+            margin-bottom: 8%;
+        }
+}
+.review{
+    width:100%;
+    background-image: url("bg6.png");
+    opacity:90%;
+    height:33.64vw;  
+    overflow: hidden;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-color: #39393A;
+    @media screen and(max-width: 1200px){
+        height:42.258vw;
+        background-size: 100%;
+       }
+    &__container{
+        @include container();
+        height:100%; 
+        padding-top: 6%;
+    }
+
+    &__title{
+        text-align: center;
+        font-size: 1.65vw;
+        line-height: 26px;
+        color: $white;
+        font-family: $fontAleo;
+        font-weight: 400;
+        margin-bottom: 8.7%;
+    }
+
+    &__passage{
+       width:100%;
+       height:13.36vw;
+       @media screen and(max-width: 1200px){
+        height:60%;
+       }
+        
+    }
+
+    &__picture{
+        height:100%;
+        width:20.5069vw;
+        
+    }
+
+    &__comment{
+      float:right;
+       height: 83%;
+       width:28.07vw;
+       padding-left:5%;
+       padding-top:4.5%;
+       background-color: #323334;
+       @media screen and(max-width: 1200px){
+        height:100%;
+        padding-top: 0px;
+
+       }
+        
+    }
+    &__client-name{
+        font-size: 20px;
+        line-height: 26px;
+        color: $lightwhite;
+        font-family: $fontJosefin;
+        margin-bottom: 5%;
+        @media screen and(max-width: 1200px){
+            font-size: 15px;
+           }
+   
+        
+    }
+
+    &__svg{
+        fill: $blue;
+        width:1vw;
+        height:1vw;
+        float:left;
+      
+        
+    }
+
+    &__text{
+    font-size: 0.6912vw;
+    line-height: 1.1981vw;
+    color: $white;
+    font-family: 'Font Awesome';
+    float:right;
+    width:26.4vw;
+    float:right;
+    padding-top:1.5%;
+    }
+}
+
+.footer{
+    background-color: #222324;
+    height:13vw;
+    &__container{
+        height:100%;
+        @include container();
+        padding-top: 6.25%;
+        text-align:center;
+        color:$white;
+        font-family: $fontJosefin
+    }
+    &__title{
+        font-size: $font24px;
+        letter-spacing: 3px;
+        line-height: $font26px;
+        font-weight: 700;
+        margin-bottom: 1.5%;
+    }
+    &__description{
+        font-size: $font15px;
+        letter-spacing: 2px;
+        line-height: $font26px;
+    }
+    &__icons{
+        margin-top:2.5%;
+        display: flex;
+        justify-content: space-around;
+        width: 8.3vw;
+        margin-right: auto;
+        margin-left: auto;
+       
+        
+        
+    }
+    &__iconitem{
+        fill:$white;
+        
+    }
+    &__iconitem--linkedin{
+        fill: $blue;
+    }
+   
+}
